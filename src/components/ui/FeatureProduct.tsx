@@ -10,7 +10,7 @@ import { useAppSelector } from '@/app/store/hooks';
 export default function FeatureProduct() {
 const bestSelling = useAppSelector((state) => state.products.slice(0,8))
   // Carousel Settings
-  let settings = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,

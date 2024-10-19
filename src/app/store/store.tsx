@@ -1,4 +1,4 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 import  productSlice  from './features/product'
 import  cartSlice  from './features/cart'
 // import storage from "redux-persist/lib/storage"

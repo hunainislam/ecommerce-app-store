@@ -3,8 +3,8 @@
 import React from 'react'
 import { store } from './store/store';
 import { Provider } from 'react-redux';
-// import { PersistGate } from 'redux-persist/integration/react';
-// import { persistStore } from 'redux-persist';
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistStore } from 'redux-persist';
 
 
 export default function Providers({
@@ -12,11 +12,11 @@ export default function Providers({
   }: Readonly<{
     children: React.ReactNode;
   }>) {
-    // let persiStor = persistStore(store)
+    const persiStor = persistStore(store)
   return <Provider store= {store} >
     {children}
-    {/* <PersistGate persistor={persiStor}>
+    <PersistGate persistor={persiStor}>
     {children}
-    </PersistGate> */}
+    </PersistGate>
     </Provider>
 }

@@ -71,14 +71,14 @@ export default function Header() {
           </div>
           {/* Logo */}
           <div>
-      <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <Link href={""} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <Image className="text-myWhite ml-4 " src={logo}
               alt="Z.H Sanitary & Electric Store"
               width={50}
               height={30}
               />
             <span className="ml-3 text-myBlackPara scroll-m-20 text-xs font-extrabold tracking-tight lg:text-2xl">Z.H Sanitary & Electric Store</span>
-          </a>
+          </Link>
       </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -108,11 +108,13 @@ export default function Header() {
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
+                <div>
                 {cart.length > 0 && (
                   <span className="badge badge-sm font-semibold indicator-item text-myBlackHead group-hover:text-myWhite group-hover:bg-myBlackPara">
                   {cart.length}
                 </span>
                 )}
+                </div>
               </div>
             </div>
             </Link>

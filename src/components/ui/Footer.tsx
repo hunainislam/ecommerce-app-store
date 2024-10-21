@@ -122,12 +122,12 @@ export default function Footer() {
       <Link target="_blank" href= {"https://github.com/hunainislam?tab=repositories"} className="ml-3 text-gray-500">
       <FaSquareGithub  className="text-2xl hover:text-black"/>
       </Link>
-      <a target="_blank" href={"https://vercel.com/malik-hunains-projects"} className="ml-3 text-gray-500">
+      <Link target="_blank" href={"https://vercel.com/malik-hunains-projects"} className="ml-3 text-gray-500">
       <SiVercel className="text-2xl hover:text-black"/>
-      </a>
-      <a target="_blank" href={"https://www.npmjs.com/~malikhunain"} className="ml-3 text-gray-500">
+      </Link>
+      <Link target="_blank" href={"https://www.npmjs.com/~malikhunain"} className="ml-3 text-gray-500">
       <FaNpm className="text-2xl hover:text-red-600" />
-      </a>
+      </Link>
     </span>
     </div>
   </div>

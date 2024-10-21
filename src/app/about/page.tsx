@@ -3,6 +3,7 @@
 import React from 'react'
 import hunain2 from "../../../public/image/hunain2.jpg"
 import Typewriter from "typewriter-effect";
+import Link from "next/link"
 import Image from "next/image"
 
 export default function About() {

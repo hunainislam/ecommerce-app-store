@@ -71,14 +71,14 @@ export default function Header() {
           </div>
           {/* Logo */}
           <div>
-      <Link href={""} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <Image className="text-myWhite ml-4 " src={logo}
               alt="Z.H Sanitary & Electric Store"
               width={50}
               height={30}
               />
             <span className="ml-3 text-myBlackPara scroll-m-20 text-xs font-extrabold tracking-tight lg:text-2xl">Z.H Sanitary & Electric Store</span>
-          </Link>
+          </a>
       </div>
         </div>
         <div className="navbar-center hidden lg:flex">

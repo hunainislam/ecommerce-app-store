@@ -56,7 +56,7 @@ export default function BestSellingCardAddToCart({ products }: { products: strin
   const handleAddToCart = () => {
     // Check if the product with the same size and color is already in the cart
     const existingProduct = cart.find(
-      (item) =>
+      (item: any) =>
         item.id === cartItem.id &&
         item.size === cartItem.size &&
         item.color === cartItem.color
@@ -96,7 +96,7 @@ export default function BestSellingCardAddToCart({ products }: { products: strin
                 <option disabled selected>
                   Select Items
                 </option>
-                {product?.size.map((item, i) => (
+                {product?.size.map((item: any, i: any) => (
                   <option key={i}>{item}</option>
                 ))}
               </select>
@@ -107,7 +107,7 @@ export default function BestSellingCardAddToCart({ products }: { products: strin
             <span className="mr-3 scroll-m-20 text-base text-myBlackHead font-semibold tracking-tight">
               Color
             </span>
-            {product?.color.map((item, i) => (
+            {product?.color.map((item: any, i: number) => (
               <button
                 key={i}
                 onClick={() => setCartItem({ ...cartItem, color: item })}

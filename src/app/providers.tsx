@@ -14,7 +14,6 @@ export default function Providers({
   }>) {
     const persiStor = persistStore(store)
   return <Provider store= {store} >
-    {children}
     <PersistGate persistor={persiStor}>
     {children}
     </PersistGate>
